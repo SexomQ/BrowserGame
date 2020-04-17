@@ -1,0 +1,435 @@
+/* CSS Document */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*PAGE 1==========================
+==================================*/
+.game-start {
+	width: 100vw;
+	height: 100vh;
+	background-color: palevioletred; 
+}
+
+.game-start__images {
+	
+}
+
+.Cornel-logo {
+	position: absolute;
+	top: 30%;
+	left: 38%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 200px;
+	height: 200px;
+	z-index: 2;
+}
+
+.Nina-logo_1 {
+	position: absolute;
+	top: 30%;
+	left: 63%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 200px;
+	height: 200px;
+	z-index: 2;
+}
+
+.game-start__images i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	color: mediumvioletred;
+	font-size: 200px;
+	z-index: 1;
+	animation: sizechange 2s ease-in 0s infinite reverse;
+} 
+@keyframes sizechange {
+	0% { font-size: 200px;}
+	50% {font-size: 500px;}
+	100% {font-size: 200px;}
+}
+
+.game-start__text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	z-index: 2;
+}
+
+.game-start__text span {
+	font-size: 60px;
+	font-family: 'Spicy Rice', cursive;
+	text-transform: uppercase;
+	color: blue;
+	
+}
+
+.button {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	padding-bottom: 50px;
+	z-index: 2;
+}
+
+.button a {
+	text-decoration: none;
+	color: palevioletred;
+	padding: 20px 30px;
+	background-color: blue;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 30px;
+	border-radius: 25px;
+	transition: padding .3s linear;
+}
+
+.button a:hover {
+	padding: 25px 35px;
+}
+
+/*PAGE 2==========================
+==================================*/
+.text {
+	font-size: 60px;
+	font-family: 'Spicy Rice', cursive;
+	text-transform: uppercase;
+	color: blue;
+}
+
+.game .buttons {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	padding-bottom: 50px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.buttons .button2 {
+	margin: 30px;
+}
+
+.game .button2 a {
+	display: inline-block;
+	width: 300px;
+	text-decoration: none;
+	color: palevioletred;
+	padding: 20px 30px;
+	background-color: blue;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 30px;
+	border-radius: 25px;
+	transition: padding .3s linear;
+}
+
+.game .button a:hover {
+	padding: 25px 35px;
+}
+
+/*PAGE 3======================
+==============================*/
+
+.game-table {
+	width: 100vw;
+	height: 100vh;
+	background-color: palevioletred;
+	cursor: url(../pix/cursor2.png) 100 100, pointer;
+}
+
+.game-table:hover .Nina-logo {
+	display: block;
+}
+
+.game-table:hover .win-message {
+	display: block;
+}
+
+.end-message span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	font-family: 'Spicy Rice', cursive;
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.Nina-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 13%;
+	height: auto;
+	z-index: 4;
+	display: none;
+	transition: display 0.001s linear;
+}
+
+.Nina-logo:hover {
+	display: none;
+}
+
+.img1-easy {
+	animation-name: move1;
+	animation-duration: 6s;
+	animation-iteration-count: 60;
+}
+@keyframes move1 {
+	0% { left: 1%;
+		 top:0;}
+	25% {left:87%;
+		 top:0;}
+	50% { left:87%;
+		 top:75%;}
+	75% { left: 1%;
+		 top:75%;}
+	100% { left: 1%;
+		 top:0}
+}
+
+.img2-easy {
+	animation-name: move2;
+	animation-duration: 5s;
+	animation-iteration-count: 60;
+}
+@keyframes move2 {
+	0% { left:87%;
+		 top:75%;}
+	25% { left:87%;
+		 top:0;}
+	50% { left: 1%;
+		 top:0;}
+	75% { left:1%;
+		 top:75%;}
+	100% { left:87%;
+		 top:75%;}
+}
+
+.img3-easy {
+	animation-name: move3;
+	animation-duration: 5s;
+	animation-iteration-count: 60;
+}
+@keyframes move3 {
+	0% { left: 14%;
+		 top:13%;}
+	50% { left:63%;
+		 top:13%;}
+	75% { left: 14%;
+		 top:62%;}
+	100% { left: 14%;
+		 top:13%;}
+	
+}
+
+.img4-easy {
+	animation-name: move4;
+	animation-duration: 6s;
+	animation-iteration-count: 60;
+}
+@keyframes move4 {
+	0% { left: 63%;
+		 top:62%;}
+	50% { left: 14%;
+		 top:13%;}
+	75% { left: 14%;
+		 top:62%;}
+	100% { left: 63%;
+		 top:62%;}
+	
+}
+
+.img1-medium {
+	animation-name: move11;
+	animation-duration: 4s;
+	animation-iteration-count: 60;
+}
+@keyframes move11 {
+	0% { left: 1%;
+		 top:0;}
+	25% {left:87%;
+		 top:0;}
+	50% { left:87%;
+		 top:75%;}
+	75% { left: 1%;
+		 top:75%;}
+	100% { left: 1%;
+		 top:0}
+}
+
+.img2-medium {
+	animation-name: move22;
+	animation-duration: 5s;
+	animation-iteration-count: 60;
+}
+@keyframes move22 {
+	0% { left:87%;
+		 top:75%;}
+	25% { left:87%;
+		 top:0;}
+	50% { left: 1%;
+		 top:0;}
+	75% { left:1%;
+		 top:75%;}
+	100% { left:87%;
+		 top:75%;}
+}
+
+.img3-medium {
+	animation-name: move33;
+	animation-duration: 4s;
+	animation-iteration-count: 60;
+}
+@keyframes move33 {
+	0% { left: 14%;
+		 top:13%;}
+	50% { left:63%;
+		 top:13%;}
+	75% { left: 14%;
+		 top:62%;}
+	100% { left: 14%;
+		 top:13%;}
+	
+}
+
+.img4-medium {
+	animation-name: move44;
+	animation-duration: 5s;
+	animation-iteration-count: 60;
+}
+@keyframes move44 {
+	0% { left: 63%;
+		 top:62%;}
+	50% { left: 14%;
+		 top:13%;}
+	75% { left: 14%;
+		 top:62%;}
+	100% { left: 63%;
+		 top:62%;}
+	
+}
+
+.img1-hard {
+	animation-name: move111;
+	animation-duration: 3s;
+	animation-iteration-count: 60;
+}
+@keyframes move111 {
+	0% { left: 1%;
+		 top:0;}
+	25% {left:87%;
+		 top:0;}
+	50% { left:87%;
+		 top:75%;}
+	75% { left: 1%;
+		 top:75%;}
+	100% { left: 1%;
+		 top:0}
+}
+
+.img2-hard {
+	animation-name: move222;
+	animation-duration: 4s;
+	animation-iteration-count: 60;
+}
+@keyframes move222 {
+	0% { left:87%;
+		 top:75%;}
+	25% { left:87%;
+		 top:0;}
+	50% { left: 1%;
+		 top:0;}
+	75% { left:1%;
+		 top:75%;}
+	100% { left:87%;
+		 top:75%;}
+}
+
+.img3-hard {
+	animation-name: move333;
+	animation-duration: 3s;
+	animation-iteration-count: 60;
+}
+@keyframes move333 {
+	0% { left: 14%;
+		 top:13%;}
+	50% { left:63%;
+		 top:13%;}
+	75% { left: 14%;
+		 top:62%;}
+	100% { left: 14%;
+		 top:13%;}
+	
+}
+
+.img4-hard {
+	animation-name: move444;
+	animation-duration: 4s;
+	animation-iteration-count: 60;
+}
+@keyframes move444 {
+	0% { left: 63%;
+		 top:62%;}
+	50% { left: 14%;
+		 top:13%;}
+	75% { left: 14%;
+		 top:62%;}
+	100% { left: 63%;
+		 top:62%;}
+	
+}
+
+.win-message span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	font-family: 'Spicy Rice', cursive;
+	font-size: 60px;
+	font-weight: 500;
+}
+	
+.win-message {
+	position: absolute;
+	left: -10000px;
+	width: 100vw;
+	height: 100vh;
+	background-color: yellow;
+	z-index: 5;
+	display: none;
+}	
+	
+.win1 {
+	animation-name: won1;
+	animation-delay: 30s;
+	animation-duration: 10000s;
+}
+@keyframes won1 {
+	0% { left: -10000px;}
+	0.01% { left: 0;}
+	100% { left: 0;}
+}
+
+.game-objects:hover .Nina-logo {
+	display: none;
+}
+
+
+
+
+	
